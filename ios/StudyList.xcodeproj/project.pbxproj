@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12EFEF37905A351A9DFC22BB /* StudyListWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D2EA0223E8828E90EFC4BC4D /* StudyListWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		361FB45C7C3D9254314CE400 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3CD9E72F2FB5C798E9A98 /* ContentView.swift */; };
+		4F0CB27512039743896424F9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1750D6CC03138F8C0425AE /* SettingsView.swift */; };
+		57EFEEB508B5FE8ADBB56188 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6AEAFC18AF98A2E3FCCB8DDA /* SQLite */; };
+		5F00F30E7223E95B7D2A12F6 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CC6A3D4B6E2B8DC7A092D5 /* DatabaseService.swift */; };
+		8A0F82128A0C8A24098BF8C8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D633CB608D127BECE7DD966A /* Models.swift */; };
+		9EF683E44D33C6C53E4DF298 /* StudyListWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE751F82C67C2FDFFF3E4E /* StudyListWidget.swift */; };
+		CE6A32340A2342CE16A8EE27 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E2DA2D3FDB9E601C208892 /* APIService.swift */; };
+		D0A524C30095461682253EFB /* StudyListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91275722FC6C9FEA888233CD /* StudyListApp.swift */; };
+		DECA1E4990F5A86DF4DEDEA6 /* StudyListWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6BE23766D90FE87AAE4F2 /* StudyListWidgetBundle.swift */; };
+		E4C93B617F3F5BA56A9F2F88 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C25C1F34D3C20D8FE17AF4 /* CardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F169235242DC3ECA9F549ED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6204DCA52304B75B8118D72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 772AD47884C362FF0BA7A730;
+			remoteInfo = StudyListWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA2C7ADBA4C77C9170093BB8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				12EFEF37905A351A9DFC22BB /* StudyListWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08CC6A3D4B6E2B8DC7A092D5 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		2286EA9FF00A7423CD27A211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		27DE751F82C67C2FDFFF3E4E /* StudyListWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListWidget.swift; sourceTree = "<group>"; };
+		2A1750D6CC03138F8C0425AE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6EF6BE23766D90FE87AAE4F2 /* StudyListWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListWidgetBundle.swift; sourceTree = "<group>"; };
+		7E043FF2ADF324F887509805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		91275722FC6C9FEA888233CD /* StudyListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListApp.swift; sourceTree = "<group>"; };
+		92C25C1F34D3C20D8FE17AF4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9CE89F3A264F3AC09049EC0D /* StudyListApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StudyListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDB2F239E3D52CA91691551 /* StudyListApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyListApp.entitlements; sourceTree = "<group>"; };
+		C2E2DA2D3FDB9E601C208892 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D2EA0223E8828E90EFC4BC4D /* StudyListWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = StudyListWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D633CB608D127BECE7DD966A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		DFE2169EE74CEBB5931FF36D /* StudyListWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyListWidget.entitlements; sourceTree = "<group>"; };
+		FFC3CD9E72F2FB5C798E9A98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		313539303A1DE8B33D797A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57EFEEB508B5FE8ADBB56188 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E39EEC3E1B8FF85B81CB00F = {
+			isa = PBXGroup;
+			children = (
+				6B1A7D545BBD3271701B1FDD /* StudyListApp */,
+				765544D7A2AE178034528252 /* StudyListWidget */,
+				896278441B51CAC0CDBFCACF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B1A7D545BBD3271701B1FDD /* StudyListApp */ = {
+			isa = PBXGroup;
+			children = (
+				C2E2DA2D3FDB9E601C208892 /* APIService.swift */,
+				92C25C1F34D3C20D8FE17AF4 /* CardView.swift */,
+				FFC3CD9E72F2FB5C798E9A98 /* ContentView.swift */,
+				08CC6A3D4B6E2B8DC7A092D5 /* DatabaseService.swift */,
+				7E043FF2ADF324F887509805 /* Info.plist */,
+				D633CB608D127BECE7DD966A /* Models.swift */,
+				2A1750D6CC03138F8C0425AE /* SettingsView.swift */,
+				BEDB2F239E3D52CA91691551 /* StudyListApp.entitlements */,
+				91275722FC6C9FEA888233CD /* StudyListApp.swift */,
+			);
+			path = StudyListApp;
+			sourceTree = "<group>";
+		};
+		765544D7A2AE178034528252 /* StudyListWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2286EA9FF00A7423CD27A211 /* Info.plist */,
+				DFE2169EE74CEBB5931FF36D /* StudyListWidget.entitlements */,
+				27DE751F82C67C2FDFFF3E4E /* StudyListWidget.swift */,
+				6EF6BE23766D90FE87AAE4F2 /* StudyListWidgetBundle.swift */,
+			);
+			path = StudyListWidget;
+			sourceTree = "<group>";
+		};
+		896278441B51CAC0CDBFCACF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CE89F3A264F3AC09049EC0D /* StudyListApp.app */,
+				D2EA0223E8828E90EFC4BC4D /* StudyListWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		772AD47884C362FF0BA7A730 /* StudyListWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD7684D58FA0AAE11BF9BE6A /* Build configuration list for PBXNativeTarget "StudyListWidget" */;
+			buildPhases = (
+				A0E1A6167A913E3E2720FC31 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyListWidget;
+			packageProductDependencies = (
+			);
+			productName = StudyListWidget;
+			productReference = D2EA0223E8828E90EFC4BC4D /* StudyListWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C1EFDF35D189D7351E197850 /* StudyListApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01CBF21FA551252658699478 /* Build configuration list for PBXNativeTarget "StudyListApp" */;
+			buildPhases = (
+				2D8E0C20F77E8FDD9DC02672 /* Sources */,
+				313539303A1DE8B33D797A60 /* Frameworks */,
+				FA2C7ADBA4C77C9170093BB8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FEBFA23E67276D09D144719 /* PBXTargetDependency */,
+			);
+			name = StudyListApp;
+			packageProductDependencies = (
+				6AEAFC18AF98A2E3FCCB8DDA /* SQLite */,
+			);
+			productName = StudyListApp;
+			productReference = 9CE89F3A264F3AC09049EC0D /* StudyListApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6204DCA52304B75B8118D72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					772AD47884C362FF0BA7A730 = {
+						DevelopmentTeam = "";
+					};
+					C1EFDF35D189D7351E197850 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = F58D0A0DCCA46FCB41C3CD33 /* Build configuration list for PBXProject "StudyList" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4E39EEC3E1B8FF85B81CB00F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3EB7E20E4CCA736D2C4A13C7 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 896278441B51CAC0CDBFCACF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1EFDF35D189D7351E197850 /* StudyListApp */,
+				772AD47884C362FF0BA7A730 /* StudyListWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D8E0C20F77E8FDD9DC02672 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6A32340A2342CE16A8EE27 /* APIService.swift in Sources */,
+				E4C93B617F3F5BA56A9F2F88 /* CardView.swift in Sources */,
+				361FB45C7C3D9254314CE400 /* ContentView.swift in Sources */,
+				5F00F30E7223E95B7D2A12F6 /* DatabaseService.swift in Sources */,
+				8A0F82128A0C8A24098BF8C8 /* Models.swift in Sources */,
+				4F0CB27512039743896424F9 /* SettingsView.swift in Sources */,
+				D0A524C30095461682253EFB /* StudyListApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E1A6167A913E3E2720FC31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF683E44D33C6C53E4DF298 /* StudyListWidget.swift in Sources */,
+				DECA1E4990F5A86DF4DEDEA6 /* StudyListWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FEBFA23E67276D09D144719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 772AD47884C362FF0BA7A730 /* StudyListWidget */;
+			targetProxy = F169235242DC3ECA9F549ED2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17B5AAFC37DEC7AE2D321166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		42DC845F3ECB8C0CFCB28780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StudyListWidget/StudyListWidget.entitlements;
+				INFOPLIST_FILE = StudyListWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.studylist.app.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60AA2802DC203F627A4685B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StudyListApp/StudyListApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = StudyListApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.studylist.app;
+				SDKROOT = iphoneos;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E1F73E1E2F3C5691EFAC64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		7575ECD2A0F91756B31293A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StudyListWidget/StudyListWidget.entitlements;
+				INFOPLIST_FILE = StudyListWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.studylist.app.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E46949855EC13322AB40DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StudyListApp/StudyListApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = StudyListApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.studylist.app;
+				SDKROOT = iphoneos;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01CBF21FA551252658699478 /* Build configuration list for PBXNativeTarget "StudyListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E46949855EC13322AB40DF2 /* Debug */,
+				60AA2802DC203F627A4685B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD7684D58FA0AAE11BF9BE6A /* Build configuration list for PBXNativeTarget "StudyListWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7575ECD2A0F91756B31293A1 /* Debug */,
+				42DC845F3ECB8C0CFCB28780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F58D0A0DCCA46FCB41C3CD33 /* Build configuration list for PBXProject "StudyList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B5AAFC37DEC7AE2D321166 /* Debug */,
+				6E1F73E1E2F3C5691EFAC64E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3EB7E20E4CCA736D2C4A13C7 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AEAFC18AF98A2E3FCCB8DDA /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3EB7E20E4CCA736D2C4A13C7 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A6204DCA52304B75B8118D72 /* Project object */;
+}

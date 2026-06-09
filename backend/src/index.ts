@@ -26,6 +26,19 @@ app.get('/cards', (c) => {
   return c.json({ cards })
 })
 
+// GET /decks - list decks with card counts
+app.get('/decks', (c) => {
+  const cards = getAllCards()
+  const deckCounts: Record<string, number> = {}
+  for (const card of cards) {
+    deckCounts[card.deck_name] = (deckCounts[card.deck_name] || 0) + 1
+  }
+  const decks = Object.entries(deckCounts)
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => a.name.localeCompare(b.name))
+  return c.json({ decks })
+})
+
 // GET /daily - today's selections
 app.get('/daily', (c) => {
   const today = new Date().toISOString().split('T')[0]
