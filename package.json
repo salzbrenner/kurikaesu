@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "pnpm --filter backend dev",
     "build": "pnpm --filter backend build",
-    "sync": "pnpm tsx scripts/export_anki.ts",
+    "sync": "pnpm tsx backend/scripts/export_anki.ts",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"**/*.ts\""
   },

@@ -63,7 +63,7 @@ async function getDeckNames(): Promise<string[]> {
 async function getCardsFromDeck(
   deckName: string,
   mapping: DeckFieldMapping
-): Promise<Omit<import('../backend/src/db.js').Card, 'updated_at'>[]> {
+): Promise<Omit<import('../src/db.js').Card, 'updated_at'>[]> {
   const cardIds = await invoke<number[]>('findCards', {
     query: `deck:"${deckName}"`,
   })
@@ -98,7 +98,7 @@ async function getCardsFromDeck(
 
 async function syncToApi(
   apiUrl: string,
-  cards: Omit<import('../backend/src/db.js').Card, 'updated_at'>[]
+  cards: Omit<import('../src/db.js').Card, 'updated_at'>[]
 ): Promise<{ synced?: number; error?: string }> {
   const resp = await fetch(`${apiUrl}/sync`, {
     method: 'POST',
@@ -127,7 +127,7 @@ async function main() {
     const deckNames = await getDeckNames()
     console.log(`Found ${deckNames.length} decks in Anki`)
 
-    const allCards: Omit<import('../backend/src/db.js').Card, 'updated_at'>[] = []
+    const allCards: Omit<import('../src/db.js').Card, 'updated_at'>[] = []
 
     for (const [deckName, mapping] of Object.entries(config.decks)) {
       if (!deckNames.includes(deckName)) {
