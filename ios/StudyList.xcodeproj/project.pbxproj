@@ -57,10 +57,10 @@
 		82E7F64D5C819BCD7B3FF422 /* DeckConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckConfigView.swift; sourceTree = "<group>"; };
 		91275722FC6C9FEA888233CD /* StudyListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListApp.swift; sourceTree = "<group>"; };
 		92C25C1F34D3C20D8FE17AF4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		9CE89F3A264F3AC09049EC0D /* StudyListApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StudyListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE89F3A264F3AC09049EC0D /* StudyListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3258DE49F21019F698494B5 /* AnkiConnectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnkiConnectService.swift; sourceTree = "<group>"; };
 		BEDB2F239E3D52CA91691551 /* StudyListApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyListApp.entitlements; sourceTree = "<group>"; };
-		D2EA0223E8828E90EFC4BC4D /* StudyListWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = StudyListWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EA0223E8828E90EFC4BC4D /* StudyListWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StudyListWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D633CB608D127BECE7DD966A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		DFE2169EE74CEBB5931FF36D /* StudyListWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyListWidget.entitlements; sourceTree = "<group>"; };
 		FFC3CD9E72F2FB5C798E9A98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,14 +174,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1500;
-				TargetAttributes = {
-					772AD47884C362FF0BA7A730 = {
-						DevelopmentTeam = "";
-					};
-					C1EFDF35D189D7351E197850 = {
-						DevelopmentTeam = "";
-					};
-				};
 			};
 			buildConfigurationList = F58D0A0DCCA46FCB41C3CD33 /* Build configuration list for PBXProject "StudyList" */;
 			developmentRegion = en;
@@ -193,7 +185,7 @@
 			mainGroup = 4E39EEC3E1B8FF85B81CB00F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				3EB7E20E4CCA736D2C4A13C7 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				3EB7E20E4CCA736D2C4A13C7 /* XCRemoteSwiftPackageReference "SQLite" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 896278441B51CAC0CDBFCACF /* Products */;
@@ -314,6 +306,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = StudyListWidget/StudyListWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHQ2C66X77;
 				INFOPLIST_FILE = StudyListWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -321,6 +316,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studylist.app.widget;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,6 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = StudyListApp/StudyListApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = NHQ2C66X77;
 				INFOPLIST_FILE = StudyListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,6 +405,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = StudyListWidget/StudyListWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHQ2C66X77;
 				INFOPLIST_FILE = StudyListWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,6 +415,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studylist.app.widget;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = StudyListApp/StudyListApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = NHQ2C66X77;
 				INFOPLIST_FILE = StudyListApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,7 +473,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3EB7E20E4CCA736D2C4A13C7 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+		3EB7E20E4CCA736D2C4A13C7 /* XCRemoteSwiftPackageReference "SQLite" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
 			requirement = {
@@ -484,7 +486,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		6AEAFC18AF98A2E3FCCB8DDA /* SQLite */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3EB7E20E4CCA736D2C4A13C7 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			package = 3EB7E20E4CCA736D2C4A13C7 /* XCRemoteSwiftPackageReference "SQLite" */;
 			productName = SQLite;
 		};
 /* End XCSwiftPackageProductDependency section */

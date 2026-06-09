@@ -119,14 +119,20 @@ class AnkiConnectService {
 
     func fetchAllCards() async throws -> [Card] {
         let decks = try await fetchDeckNames()
-        var allCards: [Card] = []
 
-        for deck in decks {
-            let cards = try await fetchCards(forDeck: deck)
-            allCards.append(contentsOf: cards)
+        return try await withThrowingTaskGroup(of: [Card].self) { group in
+            for deck in decks {
+                group.addTask {
+                    try await self.fetchCards(forDeck: deck)
+                }
+            }
+
+            var allCards: [Card] = []
+            for try await cards in group {
+                allCards.append(contentsOf: cards)
+            }
+            return allCards
         }
-
-        return allCards
     }
 
     func loadDeckMappings(from db: DatabaseService) {
