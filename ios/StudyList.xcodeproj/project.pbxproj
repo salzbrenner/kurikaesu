@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		12EFEF37905A351A9DFC22BB /* StudyListWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D2EA0223E8828E90EFC4BC4D /* StudyListWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2740BA24E53CBEAE76481081 /* AnkiConnectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3258DE49F21019F698494B5 /* AnkiConnectService.swift */; };
 		361FB45C7C3D9254314CE400 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3CD9E72F2FB5C798E9A98 /* ContentView.swift */; };
 		4F0CB27512039743896424F9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1750D6CC03138F8C0425AE /* SettingsView.swift */; };
 		57EFEEB508B5FE8ADBB56188 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 6AEAFC18AF98A2E3FCCB8DDA /* SQLite */; };
+		5991B3250B907C36BC962AAB /* AnkiConnectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562D9A1E3F90C77005B1B458 /* AnkiConnectModels.swift */; };
 		5F00F30E7223E95B7D2A12F6 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CC6A3D4B6E2B8DC7A092D5 /* DatabaseService.swift */; };
 		8A0F82128A0C8A24098BF8C8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D633CB608D127BECE7DD966A /* Models.swift */; };
+		8D6D3254991F869F8795889A /* DeckConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E7F64D5C819BCD7B3FF422 /* DeckConfigView.swift */; };
 		9EF683E44D33C6C53E4DF298 /* StudyListWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DE751F82C67C2FDFFF3E4E /* StudyListWidget.swift */; };
-		CE6A32340A2342CE16A8EE27 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E2DA2D3FDB9E601C208892 /* APIService.swift */; };
 		D0A524C30095461682253EFB /* StudyListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91275722FC6C9FEA888233CD /* StudyListApp.swift */; };
 		DECA1E4990F5A86DF4DEDEA6 /* StudyListWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6BE23766D90FE87AAE4F2 /* StudyListWidgetBundle.swift */; };
 		E4C93B617F3F5BA56A9F2F88 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C25C1F34D3C20D8FE17AF4 /* CardView.swift */; };
@@ -49,13 +51,15 @@
 		2286EA9FF00A7423CD27A211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		27DE751F82C67C2FDFFF3E4E /* StudyListWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListWidget.swift; sourceTree = "<group>"; };
 		2A1750D6CC03138F8C0425AE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		562D9A1E3F90C77005B1B458 /* AnkiConnectModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnkiConnectModels.swift; sourceTree = "<group>"; };
 		6EF6BE23766D90FE87AAE4F2 /* StudyListWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListWidgetBundle.swift; sourceTree = "<group>"; };
 		7E043FF2ADF324F887509805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		82E7F64D5C819BCD7B3FF422 /* DeckConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckConfigView.swift; sourceTree = "<group>"; };
 		91275722FC6C9FEA888233CD /* StudyListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyListApp.swift; sourceTree = "<group>"; };
 		92C25C1F34D3C20D8FE17AF4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9CE89F3A264F3AC09049EC0D /* StudyListApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = StudyListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3258DE49F21019F698494B5 /* AnkiConnectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnkiConnectService.swift; sourceTree = "<group>"; };
 		BEDB2F239E3D52CA91691551 /* StudyListApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyListApp.entitlements; sourceTree = "<group>"; };
-		C2E2DA2D3FDB9E601C208892 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D2EA0223E8828E90EFC4BC4D /* StudyListWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = StudyListWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D633CB608D127BECE7DD966A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		DFE2169EE74CEBB5931FF36D /* StudyListWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyListWidget.entitlements; sourceTree = "<group>"; };
@@ -86,10 +90,12 @@
 		6B1A7D545BBD3271701B1FDD /* StudyListApp */ = {
 			isa = PBXGroup;
 			children = (
-				C2E2DA2D3FDB9E601C208892 /* APIService.swift */,
+				562D9A1E3F90C77005B1B458 /* AnkiConnectModels.swift */,
+				A3258DE49F21019F698494B5 /* AnkiConnectService.swift */,
 				92C25C1F34D3C20D8FE17AF4 /* CardView.swift */,
 				FFC3CD9E72F2FB5C798E9A98 /* ContentView.swift */,
 				08CC6A3D4B6E2B8DC7A092D5 /* DatabaseService.swift */,
+				82E7F64D5C819BCD7B3FF422 /* DeckConfigView.swift */,
 				7E043FF2ADF324F887509805 /* Info.plist */,
 				D633CB608D127BECE7DD966A /* Models.swift */,
 				2A1750D6CC03138F8C0425AE /* SettingsView.swift */,
@@ -205,10 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6A32340A2342CE16A8EE27 /* APIService.swift in Sources */,
+				5991B3250B907C36BC962AAB /* AnkiConnectModels.swift in Sources */,
+				2740BA24E53CBEAE76481081 /* AnkiConnectService.swift in Sources */,
 				E4C93B617F3F5BA56A9F2F88 /* CardView.swift in Sources */,
 				361FB45C7C3D9254314CE400 /* ContentView.swift in Sources */,
 				5F00F30E7223E95B7D2A12F6 /* DatabaseService.swift in Sources */,
+				8D6D3254991F869F8795889A /* DeckConfigView.swift in Sources */,
 				8A0F82128A0C8A24098BF8C8 /* Models.swift in Sources */,
 				4F0CB27512039743896424F9 /* SettingsView.swift in Sources */,
 				D0A524C30095461682253EFB /* StudyListApp.swift in Sources */,

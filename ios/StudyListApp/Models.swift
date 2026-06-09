@@ -47,10 +47,38 @@ struct SyncResponse: Codable {
     let error: String?
 }
 
+struct DeckFieldMapping: Codable, Equatable {
+    var japanese: String
+    var reading: String
+    var english: String
+
+    static let `default` = DeckFieldMapping(japanese: "", reading: "", english: "")
+}
+
+struct DeckConfig: Codable, Identifiable {
+    var id: String { name }
+    let name: String
+    var fieldMapping: DeckFieldMapping
+
+    static let defaultMappings: [String: DeckFieldMapping] = [
+        "Kaishi 1.5k": DeckFieldMapping(
+            japanese: "Word Furigana",
+            reading: "Word Reading",
+            english: "Word Meaning"
+        ),
+        "Mining": DeckFieldMapping(
+            japanese: "ExpressionFurigana",
+            reading: "ExpressionReading",
+            english: "MainDefinition"
+        )
+    ]
+}
+
 struct Settings: Codable {
     var cardsPerDeck: [String: Int]
+    var deckMappings: [String: DeckFieldMapping]
 
-    static let `default` = Settings(cardsPerDeck: [:])
+    static let `default` = Settings(cardsPerDeck: [:], deckMappings: DeckConfig.defaultMappings)
 
     mutating func setCount(_ count: Int, forDeck deck: String) {
         cardsPerDeck[deck] = count
@@ -58,5 +86,13 @@ struct Settings: Codable {
 
     func count(forDeck deck: String) -> Int {
         cardsPerDeck[deck] ?? 5
+    }
+
+    mutating func setMapping(_ mapping: DeckFieldMapping, forDeck deck: String) {
+        deckMappings[deck] = mapping
+    }
+
+    func mapping(forDeck deck: String) -> DeckFieldMapping {
+        deckMappings[deck] ?? DeckFieldMapping.default
     }
 }

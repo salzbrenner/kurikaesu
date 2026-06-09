@@ -4,13 +4,13 @@ struct SettingsView: View {
     @ObservedObject var viewModel: ContentViewModel
     @Environment(\.dismiss) private var dismiss
     @State private var settings: Settings = .default
-    @State private var apiURL: String = APIService.shared.baseURL
+    @State private var apiURL: String = AnkiConnectService.shared.baseURL
 
     var body: some View {
         NavigationStack {
             Form {
-                Section("API") {
-                    TextField("Backend URL", text: $apiURL)
+                Section("AnkiConnect") {
+                    TextField("AnkiConnect URL", text: $apiURL)
                         .textContentType(.URL)
                         .autocapitalization(.none)
                         .keyboardType(.URL)
@@ -34,7 +34,10 @@ struct SettingsView: View {
 
                 Section {
                     Button("Reset to Defaults") {
-                        settings = Settings(cardsPerDeck: Dictionary(uniqueKeysWithValues: viewModel.deckNames.map { ($0, 5) }))
+                        settings = Settings(
+                            cardsPerDeck: Dictionary(uniqueKeysWithValues: viewModel.deckNames.map { ($0, 5) }),
+                            deckMappings: DeckConfig.defaultMappings
+                        )
                     }
                 }
             }
@@ -48,7 +51,7 @@ struct SettingsView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") {
-                        APIService.shared.baseURL = apiURL
+                        AnkiConnectService.shared.baseURL = apiURL
                         viewModel.updateSettings(settings)
                         dismiss()
                     }
@@ -56,7 +59,7 @@ struct SettingsView: View {
             }
             .onAppear {
                 settings = viewModel.getSettings()
-                apiURL = APIService.shared.baseURL
+                apiURL = AnkiConnectService.shared.baseURL
             }
         }
     }

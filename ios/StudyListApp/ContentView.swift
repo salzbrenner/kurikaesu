@@ -3,6 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
     @State private var showingSettings = false
+    @State private var showingDeckConfig = false
 
     var body: some View {
         NavigationStack {
@@ -63,15 +64,28 @@ struct ContentView: View {
                     .disabled(viewModel.isLoading)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        showingSettings = true
+                    Menu {
+                        Button {
+                            showingDeckConfig = true
+                        } label: {
+                            Label("Deck Config", systemImage: "slider.horizontal.3")
+                        }
+
+                        Button {
+                            showingSettings = true
+                        } label: {
+                            Label("Settings", systemImage: "gear")
+                        }
                     } label: {
-                        Image(systemName: "gear")
+                        Image(systemName: "ellipsis.circle")
                     }
                 }
             }
             .sheet(isPresented: $showingSettings) {
                 SettingsView(viewModel: viewModel)
+            }
+            .sheet(isPresented: $showingDeckConfig) {
+                DeckConfigView(viewModel: viewModel)
             }
         }
         .task {
@@ -134,7 +148,9 @@ class ContentViewModel: ObservableObject {
         errorMessage = nil
 
         do {
-            let cards = try await APIService.shared.fetchCards()
+            let ankiService = AnkiConnectService.shared
+            ankiService.loadDeckMappings(from: db)
+            let cards = try await ankiService.fetchAllCards()
             db.upsertCards(cards)
             loadLocalData()
         } catch {

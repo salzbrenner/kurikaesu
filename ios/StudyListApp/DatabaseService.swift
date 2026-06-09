@@ -244,6 +244,10 @@ class DatabaseService {
         }
     }
 
+    func getDeckMappings() -> [String: DeckFieldMapping] {
+        return getSettings().deckMappings
+    }
+
     // MARK: - Helpers
 
     func generateDailySelection(forDeck deck: String) -> [Card] {
